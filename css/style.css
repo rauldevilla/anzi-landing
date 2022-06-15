@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --brand-color: blue;
+    --brand-contrast-color: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hero section */
+
+#hero {
+    background-image: url(../resources/images/hero-bg.png);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+#hero::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--brand-color);
+    opacity: 0.2;
+    z-index: -1;
+}
+
+#hero h1 {
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: var(--brand-contrast-color);
+}
+
+#hero .cta {
+    display: inline-block;
+    padding: 10px 30px;
+    color: var(--brand-color);
+    background-color: transparent;
+    border: 2px solid var(--brand-color);
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 30px;
+    transition: 0.3s ease background-color;
+}
+
+#hero .cta:hover {
+    color: var(--brand-contrast-color);
+    background-color: var(--brand-color);
+}
+
+/* End Hero section */
