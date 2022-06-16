@@ -29,6 +29,21 @@ a {
     justify-content: center;
 }
 
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+p {
+    color: var(--brand-color);
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+}
+
 /* Hero section */
 
 #hero {
@@ -125,10 +140,6 @@ a {
 
 /* End Hero section */
 
-#services {
-
-}
-
 #services .services {
     flex-direction: column;
     text-align: center;
@@ -151,19 +162,12 @@ a {
     color: var(--brand-hight-contrast-color);
 }
 
-#services .service-top p {
-    font-size: 1.4rem;
-    margin-top: 5px;
-    line-height: 2.5rem;
-    font-weight: 300;
-    letter-spacing: 0.05rem;
-}
-
 #services .service-bottom {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 50px;
 }
 
 #services .service-item {
@@ -179,6 +183,7 @@ a {
     margin: 10px 5%;
     position: relative;
     z-index: 1; 
+    overflow: hidden;
 }
 
 #services .service-item::after {
@@ -199,10 +204,16 @@ a {
     margin-bottom: 20px;
 }
 
-#services .service-bottom .icon img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+#services .service-item h2 {
+    font-size: 2rem;
+    color: var(--brand-contrast-color);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#services .service-item p {
+    color: var(--brand-contrast-color);
+    text-align: left;
 }
 
 /* Services section */
