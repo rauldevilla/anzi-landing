@@ -195,7 +195,7 @@ p {
     top: 0; 
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(60deg, var(--brand-color) 0%, var(--brand-hight-contrast-color) 100%);
+    background-image: linear-gradient(150deg, var(--brand-color) 40%, var(--brand-hight-contrast-color) 100%);
     opacity: 0.8;
     z-index: -1;
 }
