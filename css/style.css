@@ -3,7 +3,7 @@
 :root {
     --brand-color: #000032;
     --brand-contrast-color: white;
-    --brand-hight-contrast-color: #ffc107;
+    --brand-high-contrast-color: #ffc107;
 
     --brand-color-to-gradient: #ca3faa;
 }
@@ -45,6 +45,21 @@ p {
     font-weight: 300;
     letter-spacing: 0.05rem;
 }
+
+.section-title {
+    font-size: 4rem;
+    font-weight: 300;
+    color: var(--brand-color);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+.section-title span {
+    color: var(--brand-high-contrast-color);
+}
+
 
 /* Hero section */
 
@@ -116,7 +131,7 @@ p {
     left: 0;
     height: 100%;
     width: 0;
-    background-color: var(--brand-hight-contrast-color);
+    background-color: var(--brand-high-contrast-color);
     animation: text_reveal_box 1s ease;
     animation-delay: 0.3s;
 }
@@ -124,9 +139,9 @@ p {
 #hero .cta {
     display: inline-block;
     padding: 10px 30px;
-    color: var(--brand-hight-contrast-color);
+    color: var(--brand-high-contrast-color);
     background-color: transparent;
-    border: 2px solid var(--brand-hight-contrast-color);
+    border: 2px solid var(--brand-high-contrast-color);
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
@@ -137,7 +152,7 @@ p {
 
 #hero .cta:hover {
     color: var(--brand-color);
-    background-color: var(--brand-hight-contrast-color);
+    background-color: var(--brand-high-contrast-color);
 }
 
 /* End Hero section */
@@ -148,20 +163,6 @@ p {
     max-width: 1500px;
     margin: 0 auto;
     padding: 100px 0;
-}
-
-#services .section-title {
-    font-size: 4rem;
-    font-weight: 300;
-    color: var(--brand-color);
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    text-align: center;
-}
-
-#services .section-title span {
-    color: var(--brand-hight-contrast-color);
 }
 
 #services .service-bottom {
@@ -195,7 +196,7 @@ p {
     top: 0; 
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(150deg, var(--brand-color) 40%, var(--brand-hight-contrast-color) 100%);
+    background-image: linear-gradient(150deg, var(--brand-color) 40%, var(--brand-high-contrast-color) 100%);
     opacity: 0.8;
     z-index: -1;
 }
@@ -218,7 +219,67 @@ p {
     text-align: left;
 }
 
-/* Services section */
+/* End Services section */
+
+/* Projects section */
+
+#projects .projects {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#projects .projects-header {
+    margin-bottom: 50px;
+}
+
+#projects .all-projects {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#projects .project-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#projects .project-info {
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    /* background-image: linear-gradient(150deg, var(--brand-color) 40%, var(--brand-high-contrast-color) 100%); */
+    background-color: var(--brand-high-contrast-color);
+    color: var(--brand-contrast-color);
+}
+
+#projects .project-info h1 {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+#projects .project-info h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+#projects .project-info p {
+    color: var(--brand-color);
+}
+
+/* End Projects section */
 
 /* Keyframes */
 
@@ -241,7 +302,7 @@ p {
 
 @keyframes text_reveal_name {
     100% {
-        color: var(--brand-hight-contrast-color);
+        color: var(--brand-high-contrast-color);
         font-weight: 500;
     }
 }
