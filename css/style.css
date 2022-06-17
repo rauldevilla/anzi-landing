@@ -535,14 +535,16 @@ p {
 
     /* how-it-works section */
 
-    #how-it-works .how-it-works-tem {
+    #how-it-works .how-it-works-item {
          height: 400px;
          margin: 0;
          width: 100%;
          border-radius: 0;
     }
 
-    #how-it-works;
+    #how-it-works .all-how-it-works .how-it-works-item-info {
+        height: 100%;
+    }
 
     /* End how-it-works section */
 }
