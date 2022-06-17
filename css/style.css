@@ -536,13 +536,22 @@ p {
     /* how-it-works section */
 
     #how-it-works .how-it-works-item {
+        flex-direction: row;
          height: 400px;
          margin: 0;
          width: 100%;
          border-radius: 0;
     }
 
+    #how-it-works .how-it-works-item:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
     #how-it-works .all-how-it-works .how-it-works-item-info {
+        height: 100%;
+    }
+
+    #how-it-works .all-how-it-works .how-it-works-item-img {
         height: 100%;
     }
 
