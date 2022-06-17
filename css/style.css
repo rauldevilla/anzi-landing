@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 :root {
-    --brand-color: #000032;
+    --brand-color: #0d0d3f;
     --brand-contrast-color: white;
-    --brand-high-contrast-color: #ffc107;
+    --brand-high-contrast-color: #0086ff;
 }
 
 * {
@@ -199,8 +199,8 @@ p {
 }
 
 #services .service-bottom .icon {
-    height: 80px;
-    width: 80px;
+    height: 54px;
+    width: 54px;
     margin-bottom: 20px;
 }
 
@@ -257,7 +257,7 @@ p {
     justify-content: center;
     flex-direction: column;
     /* background-image: linear-gradient(150deg, var(--brand-color) 40%, var(--brand-high-contrast-color) 100%); */
-    background-color: var(--brand-high-contrast-color);
+    background-color: var(--brand-color);
     color: var(--brand-contrast-color);
 }
 
@@ -273,7 +273,7 @@ p {
 }
 
 #how-it-works .how-it-works-item-info p {
-    color: var(--brand-color);
+    color: var(--brand-contrast-color);
 }
 
 #how-it-works .how-it-works-item-img {
@@ -321,7 +321,10 @@ p {
 }
 
 #about .col-left .about-img {
+    height: 100%;
+    width: 100%;
     position: relative;
+    border: 10px solid var(--brand-contrast-color);
 }
 
 #about .col-left .about-img::after {
