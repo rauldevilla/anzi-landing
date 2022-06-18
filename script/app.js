@@ -5,4 +5,5 @@ const header = document.querySelector('.header .container');
 
 hamburguer.addEventListener('click', () => {
     hamburguer.classList.toggle('active');
+    mobile_menu.classList.toggle('active');
 });
