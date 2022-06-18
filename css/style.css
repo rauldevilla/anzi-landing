@@ -165,6 +165,54 @@ p {
     letter-spacing: initial;
 }
 
+#header .hamburguer {
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    border: 3px solid var(--brand-contrast-color);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    cursor: pointer;
+}
+
+#header .hamburguer .bar {
+    height: 2px;
+    width: 30px;
+    position: relative;
+    background-color: var(--brand-contrast-color);
+}
+
+#header .hamburguer .bar::after, 
+#header .hamburguer .bar::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background-color: var(--brand-contrast-color);
+    transition: 0.3s ease;
+    transition-property: top, bottom;
+}
+
+#header .hamburguer .bar::after {
+    top: 8px
+}
+
+#header .hamburguer .bar::before {
+    bottom: 8px;
+}
+
+#header .hamburguer.active .bar::after {
+    top: 0;
+}
+
+#header .hamburguer.active .bar::before {
+    bottom: 0;
+}
 
 /* End Header section */
 
