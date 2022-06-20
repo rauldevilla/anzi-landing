@@ -102,7 +102,8 @@ p {
 
 #header .header {
     min-height: 8vh;
-    background-color: var(--brand-color);
+    /* background-color: var(--brand-color); */
+    background-color: rgba(31, 30, 30, 0.24);
 }
 
 #header .header .brand img {
@@ -125,11 +126,11 @@ p {
     position: absolute;
     background-color: var(--brand-color);
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     left: 100%;
     top: 0;
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 1;
@@ -801,6 +802,30 @@ p {
 /* Media query for desktop */
 
 @media screen and (min-width: 1200px) {
+
+    #header .hamburguer {
+        display: none;
+    }
+
+    #header .nav-list ul {
+        position: initial;
+        display: block;
+        height: auto;
+        width: fit-content;
+        background-color: transparent;
+    }
+
+    #header .nav-list ul li {
+        display: inline-block;
+    }
+
+    #header .nav-list ul li a {
+        font-size: 1.8rem;
+    }
+
+    #header .nav-list ul a::after {
+        display: none;
+    }
 
     #services .service-bottom .service-item {
         flex-basis: 22%;
