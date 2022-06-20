@@ -17,6 +17,7 @@
 html {
     font-size: 10px;
     font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -104,6 +105,7 @@ p {
     min-height: 8vh;
     /* background-color: var(--brand-color); */
     background-color: rgba(31, 30, 30, 0.24);
+    transition: 00.3s ease background-color;
 }
 
 #header .header .brand img {
